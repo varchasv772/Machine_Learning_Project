@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Productivity</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/predict.css">
+</head>
+<body>
+   
+        <div class="topnav">
+            <div class="navbar-left">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+        </div>
+
+      </div>
+    <h3 class="main-heading"> Employee Details</h3>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-12">
+            <form action="/submit" method="POST">
+            <!-- Add your input fields here -->
+            <div class="form-group">
+                <form method="POST" action="/predict">
+                    <label class="lable-bt">Quarter:</label>
+                    <input type="number" name="quarter" required>
+                
+                    <label class="lable-bt">Department:</label>
+                    <select name="department" required>
+                        <option value="finishing">Finishing</option>
+                        <option value="sewing">Sewing</option>
+                    </select>
+                
+                    <label class="lable-bt">Day:</label>
+                    <select name="day" required>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                
+                    <label class="lable-bt">Team:</label>
+                    <input type="number" name="team" required>
+                
+                    <label class="lable-bt">Targeted Productivity:</label>
+                    <input type="number" step="any" name="targeted_productivity" required>
+                
+                    <label class="lable-bt">SMV:</label>
+                    <input type="number" step="any" name="smv" required>
+                
+                    <label class="lable-bt">Over Time (minutes):</label>
+                    <input type="number" name="over_time" required>
+                
+                    <label class="lable-bt">Incentive:</label>
+                    <input type="number" name="incentive" required>
+                
+                    <label class="lable-bt">Idle Time:</label>
+                    <input type="number" step="any" name="idle_time" required>
+                
+                    <label class="lable-bt">Idle Men:</label>
+                    <input type="number" name="idle_men" required>
+                
+                    <label class="lable-bt">No of Style Change:</label>
+                    <input type="number" name="no_of_style_change" required>
+                
+                    <label class="lable-bt">No of Workers:</label>
+                    <input type="number" name="no_of_workers" required>
+                
+                    <label class="lable-bt">Month:</label>
+                    <input type="number" name="month" required>
+                
+                    <button type="submit" class="button">Predict</button>
+                </form>
+               
+            </div>
+            <!-- Add more fields as needed (quarter, department, day, etc.) -->
+           
+        </form>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+            <img src="https://images.pexels.com/photos/7988667/pexels-photo-7988667.jpeg">
+            <div class="outside-margin">
+            <img src="https://images.pexels.com/photos/23496644/pexels-photo-23496644.jpeg">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid hoot">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="foot_1">
+                    <h2>Employee Performance Prediction</h2>
+                    <p>A smart ML-powered tool to analyze and predict employee productivity. Helps organizations make data-driven HR decisions and support workforce development.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="foot_1">
+                    <h2>Quick Links</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/predict">Predict</a></li>
+                        <li><a href="/about">About Us</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="foot_2">
+                    <h2>Contact Us</h2>
+                    <p>text-decoration: none;<br> 
+                       color: #555;</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="foot_3">
+                    <h3>© 2025 Employee Performance Predictor. All Rights Reserved.</h3>
+                    <h3>This tool is for educational purposes and provides predictive insights, not final HR decisions.</h3>
+                </div>
+                    
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
